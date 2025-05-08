@@ -1,0 +1,117 @@
+.exploreMenu{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.exploreMenu h1{
+    color: red;
+    font-weight: 800;
+}
+.explore-Menu-Text{
+    color: gray;
+    max-width: 60%;
+}
+.explore-menu-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    overflow-x: scroll;
+    margin: 20px 0px;
+    text-align: center;
+
+}
+.explore-menu-list::-webkit-scrollbar{
+    display: none;
+}
+.explore-menu-list-item img{
+    width: 7.5vw;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius:50% ;
+    transition: 0.2s;
+}
+.explore-menu-list-item p{
+    color: gray;
+    cursor: pointer;
+    font-size: max(1.4vw,16px);
+    transition: 0.2s;
+    margin-top: 10pxx;
+}
+.explore-menu hr{
+    height: 2px;
+    border: none;
+    margin: 10px 0px;
+}
+.explore-menu-list-item .active{
+    border: 4px solid tomato;
+    padding: 2px;
+}
+
+
+/* 🔥 Responsive Styles 🔥 */
+
+/* Tablet View (1024px and below) */
+@media (max-width: 1024px) {
+    .explore-Menu-Text {
+        max-width: 70%;
+    }
+
+    .explore-menu-list {
+        gap: 20px;
+        flex-wrap: wrap;
+        overflow-x: auto;
+    }
+
+    .explore-menu-list-item img {
+        width: 9vw;
+    }
+
+    .explore-menu-list-item p {
+        font-size: max(1.8vw, 14px);
+    }
+}
+
+/* Mobile View (768px and below) */
+@media (max-width: 768px) {
+    .explore-Menu-Text {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .explore-menu-list {
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .explore-menu-list-item img {
+        width: 12vw;
+        min-width: 60px;
+    }
+
+    .explore-menu-list-item p {
+        font-size: max(2vw, 14px);
+    }
+}
+
+/* Small Mobile View (480px and below) */
+@media (max-width: 480px) {
+    .explore-Menu-Text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .explore-menu-list {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .explore-menu-list-item img {
+        width: 15vw;
+        min-width: 50px;
+    }
+
+    .explore-menu-list-item p {
+        font-size: max(2.5vw, 12px);
+    }
+}

@@ -1,0 +1,168 @@
+.navbar{
+
+    display: flex;
+    padding: 20px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo{
+    width: 150px;
+}
+
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: rgb(49, 25, 71);
+    font-size: 18px;
+    font-family: Outfit;
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.navbar button{
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: transparent;
+    color: #49557e;
+    border: 1px solid tomato;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.navbar button:hover{
+    background-color: rgb(231, 223, 209);
+}
+.navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid tomato;
+}
+.navbar li {
+    cursor: pointer;
+
+}
+.navbar-search-icon{
+    position: relative;
+}
+.dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+    z-index: 2;
+}
+
+/* 🔥 Responsive Navbar 🔥 */
+
+/* Tablet View */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .navbar-menu {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .navbar-right {
+        gap: 25px;
+    }
+
+    .navbar button {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .navbar-menu {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .navbar-right {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar button {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+/* Small Mobile View */
+@media (max-width: 480px) {
+    .navbar {
+       display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+    .navbar .logo {
+        width: 120px;
+    }
+
+    .navbar-menu {
+        font-size: 14px;
+    }
+
+    .navbar button {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+.nav-bar-profile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .profile-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    width: 150px;
+    z-index: 1000;
+  }
+  
+  .profile-menu li {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+  }
+  
+  .profile-menu li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .nav-bar-profile:hover .profile-menu {
+    display: flex;
+  }
+  

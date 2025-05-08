@@ -1,0 +1,136 @@
+.header{
+    height: 34vw;
+    margin: 30px auto;
+    background-image: url("../../assets/header_img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 15px;
+    
+}
+.header-content{
+    position: absolute;
+    display: flex;
+    flex-direction:column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left:6vw;
+    animation:fadeIn 3s ease-in-out;
+}
+.header-content h2{
+    font-weight: 500;
+    color: aliceblue;
+    font-size:max(4.5vw ,22px);
+}
+
+.header-content p{
+    color: aliceblue;
+    font-size: 1vw;
+}
+.header-content button{
+    padding: 15px 30px;
+    border: none;
+    color: #747447;
+    background-color: aliceblue;
+    font-size: 1.0vw;
+    cursor: pointer;
+    border-radius:50px ;
+}
+
+/* 🔥 Responsive Header 🔥 */
+
+/* Tablet View (1024px and below) */
+@media (max-width: 1024px) {
+    .header {
+        height: 40vw;
+        margin: 20px;
+    }
+
+    .header-content {
+        max-width: 60%;
+        left: 5vw;
+        gap: 2vw;
+    }
+
+    .header-content h2 {
+        font-size: max(5vw, 24px);
+    }
+
+    .header-content p {
+        font-size: 1.5vw;
+    }
+
+    .header-content button {
+        font-size: 1.5vw;
+        padding: 12px 25px;
+    }
+}
+
+/* Mobile View (768px and below) */
+@media (max-width: 768px) {
+    .header {
+        height: 50vw;
+        margin: 15px;
+        border-radius: 10px;
+        display: none;
+    }
+
+
+    .header-content {
+        max-width: 70%;
+        left: 4vw;
+        bottom: 15%;
+        gap: 2.5vw;
+    }
+
+    .header-content h2 {
+        font-size: max(6vw, 20px);
+    }
+
+    .header-content p {
+        font-size: 2vw;
+    }
+
+    .header-content button {
+        font-size: 2vw;
+        padding: 10px 20px;
+    }
+}
+
+/* Small Mobile View (480px and below) */
+@media (max-width: 480px) {
+    .header{
+        height: 34vw;
+        margin: 30px auto;
+        background-image: url("../../assets/header_img.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        border-radius: 15px;
+        
+        
+    }
+    .header-content {
+        max-width: 80%;
+        left: 3vw;
+        bottom: 10%;
+        gap: 3vw;
+    }
+
+    .header-content h2 {
+        font-size: max(3vw, 18px);
+    }
+
+    .header-content p {
+        font-size: 1.5vw;
+    }
+
+    .header-content button {
+        font-size: 1.5vw;
+        padding: 8px 18px;
+    }
+}
