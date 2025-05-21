@@ -15,7 +15,7 @@ const Add = () => {
         price:""
     })
 
-    const url = "http://localhost:5000"
+    const url = "https://tomato-backend-0h8d.onrender.com"
 
 
     const  onChangeHandler = (e) => {
